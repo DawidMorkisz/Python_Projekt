@@ -17,3 +17,4 @@ df[['Bulls','CCI','DM','OSMA','RSI','Stoch','Decision']]=df[['Bulls','CCI','DM',
 
 print(df)
 print("Number of NaNs: ",Number_of_NaNs)
+print(1234)
