@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mateusz Dyssy</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="Miasto">
+            Katowice
+        </div>
+
+        <div id="Auta"></div>
+
+        <script>
+
+            var Pojazdy=["Audi","BMW","Opel"];
+        
+            document.getElementById("Auta").innerHTML = Pojazdy;
+            console.log(Pojazdy);
+            
+            // <ul></ul> lista nienumerowana,   <ol></ol> lista numerowana
+            var Lista = "<ol>";
+            for(let i = 0; i<Pojazdy.length;i++)
+            {
+                Lista += "<li>" +Pojazdy[i]+"</li>";
+                console.log(Pojazdy[i]);
+            }
+            Lista +="</ol>"
+            document.getElementById("Auta").innerHTML = Lista;
+
+
+            // var A = 5;
+            // let B;
+            // B = 0;
+
+            // if(A+B>=10)
+            // {
+            //     console.log("Suma wikęsza lub równa 10");
+            // }
+            // else
+            // {
+            //     var Wynik = A/B;
+            //     console.log("Wynik to:"+Wynik);
+            // }
+
+            // var T = document.getElementById("Miasto").innerHTML;
+            // console.log(T);
+            // console.log(document.getElementById("Miasto").innerHTML);
+
+
+            // var IloscKM;
+            // let Spalanie;
+            
+            // IloscKM = 70;
+            // Spalanie = 8;
+
+            // document.getElementById("Miasto").innerHTML = (Spalanie/100)*IloscKM;
+            // console.log((Spalanie/100)*IloscKM);
+
+            // IloscKM = "80";
+            // document.getElementById("Miasto").innerHTML = (Spalanie/100)*IloscKM;
+           
+        </script>
+        <div id="Test"></div>
+        <script> 
+            function NazwaFunkcji(W1)
+            {
+                console.log("Funkcja działa"+W1);
+            }
+            NazwaFunkcji("TAK");
+
+            function Działanie(x,y)
+            {
+                return x+y;
+            }
+            console.log(Dzialanie(10,5));
+            
+            document.getElementById("Test").innerHTML="Kraków";
+        </script>
+    </body>
+</html> 
